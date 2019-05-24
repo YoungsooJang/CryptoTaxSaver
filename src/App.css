@@ -1,11 +1,176 @@
-.App {
+.user-input-container {
+  padding: 20px 40px 0px;
+  display: flex;
+}
+
+.user-input-box,
+.tax-calculator-box {
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  padding: 10px;
+  width: 320px;
+}
+
+.user-input-box .access-key,
+.user-input-box .secret-key {
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-input-box span {
+  margin-bottom: 5px;
+}
+
+.user-input-box input {
+  padding: 3px;
+  font-size: 10px;
+}
+
+.user-input-box button,
+.tax-calculator-box button {
+  width: 100%;
+  height: 35px;
+  background-color: #0d3885;
+  color: #ffffff;
+  font-size: 12px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.user-input-box button:hover,
+.tax-calculator-box button:hover {
+  background-color: #23498f;
+}
+
+/* tax-calculator part */
+
+.tax-calculator-box {
+  margin-left: 20px;
+}
+
+.tax-calculator-box .title {
+  margin-bottom: 10px;
+}
+
+.tax-calculator-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.tax-calculator-box form span {
+  font-size: 14px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+}
+
+.tax-calculator-box .labels {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.tax-calculator-box label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.tax-calculator-box input {
+  margin-right: 10px;
+}
+
+/* tax-result part */
+
+.tax-result-container {
+  padding: 20px 40px 0px;
+}
+
+.tax-result-box {
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.tax-result-box .income-part {
+  display: flex;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 5px;
+}
+
+.tax-result-box .tax-part {
+  display: flex;
+  padding-top: 10px;
+}
+
+.tax-result-box .total-gain, .total-loss, .total-income, .range, .percentage, .total-tax {
+  flex: 1 0 200px;
+  padding-right: 50px;
+}
+
+.tax-result-box .tag {
+  color: #a4a4a4;
+  font-size: 12px;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+.tax-result-box .value {
+  font-size: 14px;
+  padding-left: 5px;
+  text-align: right;
+}
+
+/* record-table part */
+
+.table-container {
+  padding: 20px 40px;
+}
+
+.record-table thead, tbody, tfoot, tr, th, td, img {
+  vertical-align: middle;
+}
+
+.record-table {
+  width: 100%;
+  border-top: 1px solid #eeeeee;
+  border-collapse: collapse;
+}
+
+.record-table thead tr {
+  height: 47px;
+}
+
+.record-table thead th {
+  color: #a4a4a4;
+  font-size: 12px;
+}
+
+.record-table tbody tr {
+  height: 57px;
+}
+
+.record-table tbody .ask {
+  color: #4386f9;
+}
+
+.record-table tbody .bid {
+  color: #f75467;
+}
+
+.record-table tbody td {
+  color: #444444;
+  font-size: 14px;
   text-align: center;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.record-table thead th,
+.record-table tbody td {
+  border-bottom: 1px solid #eeeeee;
+  padding: 0px 15px;
+}
+
+.align-right {
+  text-align: right !important;
 }
