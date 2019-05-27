@@ -11,9 +11,22 @@ const PORT = process.env.PORT || 4000;
 app.use(cors());
 
 app.use(express.static(path.join(__dirname, '..', 'public/')));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+let accessKey;
+let secretKey;
+
+app.post('/setKey', (req, res) => {
+  // eslint-disable-next-line prefer-destructuring
+  accessKey = req.body.accessKey;
+  // eslint-disable-next-line prefer-destructuring
+  secretKey = req.body.secretKey;
+
+  res.send('success');
+});
 
 app.get('/api/getOrders', (req, res) => {
-  const { accessKey, secretKey } = req.query;
   const query = queryEncode({ state: 'done', page: 1, order_by: 'desc' });
   const payload = {
     access_key: accessKey,

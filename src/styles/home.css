@@ -1,80 +1,54 @@
-.user-input-container {
-  padding: 20px 40px 0px;
-  display: flex;
-}
-
-.user-input-box,
-.tax-calculator-box {
-  border: 1px solid #eeeeee;
-  border-radius: 5px;
-  padding: 10px;
-  width: 320px;
-}
-
-.user-input-box .access-key,
-.user-input-box .secret-key {
-  font-size: 14px;
-  margin-bottom: 10px;
+.home {
   display: flex;
   flex-direction: column;
-}
-
-.user-input-box span {
-  margin-bottom: 5px;
-}
-
-.user-input-box input {
-  padding: 3px;
-  font-size: 10px;
-}
-
-.user-input-box button,
-.tax-calculator-box button {
-  width: 100%;
-  height: 35px;
-  background-color: #0d3885;
-  color: #ffffff;
-  font-size: 12px;
-  border-radius: 4px;
-  outline: none;
-}
-
-.user-input-box button:hover,
-.tax-calculator-box button:hover {
-  background-color: #23498f;
+  overflow-y: auto;
 }
 
 /* tax-calculator part */
 
 .tax-calculator-box {
-  margin-left: 20px;
+  border: 1px solid #d8dee2;
+  border-radius: 5px;
+  width: 580px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 54px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.tax-calculator-box button {
+  height: 34px;
+  background-color: #0d3885;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  padding: 0px 15px;
+}
+
+.tax-calculator-box button:hover {
+  background-color: #23498f;
 }
 
 .tax-calculator-box .title {
-  margin-bottom: 10px;
-}
-
-.tax-calculator-box form {
-  display: flex;
-  flex-direction: column;
-}
-
-.tax-calculator-box form span {
   font-size: 14px;
-  margin-left: 10px;
-  margin-bottom: 8px;
+  font-weight: 600;
 }
 
-.tax-calculator-box .labels {
-  margin-bottom: 5px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
+.tax-calculator-box span {
+  color: #a4a4a4;
+  font-size: 12px;
+  margin-right: 18px;
 }
 
 .tax-calculator-box label {
   font-size: 14px;
-  margin-bottom: 5px;
+  margin-right: 14px;
 }
 
 .tax-calculator-box input {
@@ -83,19 +57,16 @@
 
 /* tax-result part */
 
-.tax-result-container {
-  padding: 20px 40px 0px;
-}
-
 .tax-result-box {
-  border: 1px solid #eeeeee;
+  margin: 20px 40px 0px;
+  border: 1px solid #d8dee2;
   border-radius: 5px;
   padding: 10px;
 }
 
 .tax-result-box .income-part {
   display: flex;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #d8dee2;
   padding-bottom: 5px;
 }
 
@@ -104,7 +75,12 @@
   padding-top: 10px;
 }
 
-.tax-result-box .total-gain, .total-loss, .total-income, .range, .percentage, .total-tax {
+.total-gain,
+.total-loss,
+.total-income,
+.range,
+.percentage,
+.total-tax {
   flex: 1 0 200px;
   padding-right: 50px;
 }
@@ -125,10 +101,19 @@
 /* record-table part */
 
 .table-container {
-  padding: 20px 40px;
+  overflow-y: auto;
+  flex: 1 1 auto;
+  margin: 20px 40px 0px;
+  padding-bottom: 20px;
 }
 
-.record-table thead, tbody, tfoot, tr, th, td, img {
+.record-table thead,
+tbody,
+tfoot,
+tr,
+th,
+td,
+img {
   vertical-align: middle;
 }
 
